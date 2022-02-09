@@ -10,13 +10,14 @@
 
     <header class="main-header">
         <a href="index.html" class="header-logo">
-            <img src="#" alt="Логотип сайта Device">
+            <img src="./images/header-logo.svg" width="145" height="36" alt="Логотип сайта Device.">
         </a>
 
         <section class="navigation">
 
             <section class="user-navigation">
-                <form class="navigation-search" action="https://echo.htmlacademy.ru/" method="post">
+                <form class="navigation-search" action="https://echo.htmlacademy.ru/" method="get">
+                    <img src="./images/search-icon.svg" width="16" height="16" alt="Иконка поиска.">
                     <input type="text" placeholder="Текст поиска">
                     <input type="button" class="search-button" value="Найти">
                 </form>
@@ -24,19 +25,23 @@
                 <ul class="navigation-shoppingcart">
                     <li class="shoppingcart-item">
                         <a href="#" class="shoppingcart-enter">
-                            <span class="shoppingcart-icon visually-hidden">значок входа</span>
+                            <img src="./images/header-icon.svg" width="13" height="12"
+                                alt="Значок входа для пользователя.">
                             <span class="shoppingcart-user">Коля Петухов</span>
+                        </a>
+                        <a href="#" class="shoppingcart-exit">
                             <span class="comparison-text">Выйти</span>
                         </a>
                     <li class="shoppingcart-item">
                         <a href="#" class="shoppingcart-comparison">
-                            <span class="shoppingcart-icon visually-hidden">значок сравнения</span>
+                            <img src="./images/comparison-icon.svg" width="10" height="13" alt="Значок сравнения.">
                             <span class="comparison-text">Сравнить</span>
                         </a>
                     </li>
                     <li class="shoppingcart-item">
                         <a href="#" class="shoppingcart-basket">
-                            <span class="shoppingcart-icon visually-hidden">значок корзины</span>
+                            <span class="shoppingcart-icon visually-hidden">2</span>
+                            <img src="./images/basket-icon.svg" width="16" height="14" alt="Значок корзины.">
                             <span class="basket-text">Корзина</span>
                         </a>
                     </li>
@@ -138,35 +143,35 @@
                             <label class="control">
                                 <input class="control-input" type="checkbox" name="black-color" checked>
 
-                                Черный
+                                <span class="control-text">Черный</span>
                             </label>
                         </li>
                         <li class="catalog-filter-item">
                             <label class="control">
                                 <input class="control-input" type="checkbox" name="white-color" checked>
 
-                                Белый
+                                <span class="control-text">Белый</span>
                             </label>
                         </li>
                         <li class="catalog-filter-item">
                             <label class="control">
                                 <input class="control-input" type="checkbox" name="blue-color">
 
-                                Синий
+                                <span class="control-text">Синий</span>
                             </label>
                         </li>
                         <li class="catalog-filter-item">
                             <label class="control">
                                 <input class="control-input" type="checkbox" name="red-color">
 
-                                Красный
+                                <span class="control-text">Красный</span>
                             </label>
                         </li>
                         <li class="catalog-filter-item">
                             <label class="control">
                                 <input class="control-input" type="checkbox" name="pink-color">
 
-                                Розовый
+                                <span class="control-text">Розовый</span>
                             </label>
                         </li>
                     </ul>
@@ -219,35 +224,43 @@
             <ul class="product-list">
                 <li class="product-card">
                     <a class="product-card-link" href="#">
-                        <img class="product-card-image" src="#" alt="Любительская селфи-палка">
+                        <div class="product-card-image-container">
+                            <img class="product-card-image" src="./images/amateur-selfie-stick.jpg" width="360" height="380" alt="Любительская селфи-палка.">
+                        </div>
                         <h3 class="product-card-title">Любительская селфи-палка</h3>
                     </a>
                     <b class="product-card-price">500 ₽</b>
                 </li>
                 <li class="product-card">
                     <a class="product-card-link" href="#">
-                        <img class="product-card-image" src="#" alt="Профессиональная селфи-палка">
+                        <div class="product-card-image-container">
+                            <img class="product-card-image" src="./images/professional-selfie-stick.jpg" width="360" height="380" alt="Профессиональная селфи-палка.">
+                        </div>
                         <h3 class="product-card-title">Профессиональная селфи-палка</h3>
                     </a>
                     <b class="product-card-price">1 500 ₽</b>
                 </li>
                 <li class="product-card">
                     <a class="product-card-link" href="#">
-                        <img class="product-card-image" src="#" alt="Непотопляемая селфи-палка">
+                        <div class="product-card-image-container">
+                            <img class="product-card-image" src="./images/unsinkable-selfie-stick.jpg" width="360" height="380" alt="Непотопляемая селфи-палка.">
+                        </div>
                         <h3 class="product-card-title">Непотопляемая селфи-палка</h3>
                     </a>
                     <b class="product-card-price">2 500 ₽</b>
                 </li>
                 <li class="product-card">
                     <a class="product-card-link" href="#">
-                        <img class="product-card-image" src="#" alt="Селфи-палка следуй за мной">
+                        <div class="product-card-image-container">
+                            <img class="product-card-image" src="./images/selfie-stick-with-hand.jpg" width="360" height="380" alt="Селфи-палка следуй за мной.">
+                        </div>
                         <h3 class="product-card-title">Селфи-палка "следуй за мной"</h3>
                     </a>
                     <b class="product-card-price">1 500 ₽</b>
                 </li>
             </ul>
 
-            <button class="button pagination-show-more" type="button">загрузить ещё</button>
+            <a href="#" class="button pagination-show-more">загрузить ещё</a>
 
             <section class="pagination">
                 <a class="pagination-link pagination-back">
@@ -280,7 +293,7 @@
 
     <footer class="page-footer">
         <a href="index.html" class="footer-logo">
-            <img src="#" alt="Логотип сайта Device">
+            <img src="./images/footer-logo.svg" width="144,99" height="36" alt="Логотип сайта Device.">
         </a>
 
         <section class="footer-info">
@@ -309,19 +322,22 @@
                     <li class="social-item">
                         <a href="https://www.facebool.com/htmlacademy" rel="nofollow noopener noreferrer"
                             target="_blank" class="social-link">
-                            <img src="#" alt="Иконка facebook" class="link-icon">
+                            <img src="./images/facebook-icon.svg" width="9" height="18" alt="Иконка facebook."
+                                class="link-icon">
                         </a>
                     </li>
                     <li class="social-item">
                         <a href="https://www.instagram.com/htmlacademy/" rel="nofollow noopener noreferrer"
                             target="_blank" class="social-link">
-                            <img src="#" alt="Иконка instagram" class="link-icon">
+                            <img src="./images/instagram-icon.svg" width="16" height="16" alt="Иконка instagram."
+                                class="link-icon">
                         </a>
                     </li>
                     <li class="social-item">
                         <a href="https://twitter.com/htmlacademy-ru" rel="nofollow noopener noreferrer" target="_blank"
                             class="social-link">
-                            <img src="#" alt="Иконка twitter" class="link-icon">
+                            <img src="./images/twitter-icon.svg" width="15" height="14,06" alt="Иконка twitter."
+                                class="link-icon">
                         </a>
                     </li>
                 </ul>
@@ -330,16 +346,13 @@
             <section class="footer-contacts">
                 <a class="footer-contacts-address-phone" href="tel:+78121212">+7 (812) 812-12-12</a>
                 <a class="htmlacademy-link" href="https://htmlacademy.ru/">
-                    <img src="#" alt="значок htmlacademy">
+                    <img src="./images/htmlacademy-icon.svg" width="114,9" height="32,9" alt="значок htmlacademy.">
                 </a>
             </section>
 
         </section>
 
-
     </footer>
-
-
 </body>
 
 </html>
