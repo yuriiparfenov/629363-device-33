@@ -37,7 +37,7 @@ html {
 body {
     width: 1440px;
     font-family: "Rubik", serif;
-    margin: 0;
+    margin: 0 auto;
     font-size: 18px;
     line-height: 30px;
     color: #000000;
@@ -71,7 +71,6 @@ body {
 }
 
 .search-text {    
-    font-family: "Rubik", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -100,6 +99,7 @@ body {
     border-radius: 0px 50px 50px 0px;
     background: #FFE17F;
     margin-left: -6px;
+    cursor: pointer;
 }
 
 .search-text::placeholder {
@@ -111,6 +111,12 @@ body {
     line-height: 20px;
     display: flex;
     align-items: center;
+    position: relative;
+}
+
+.pop-up-basket {
+    position: absolute;
+    list-style-type: none;
 }
 
 .navigation-shoppingcart {
@@ -221,6 +227,7 @@ body {
     list-style-type: none;
     display: flex;
     align-items: center;
+    
 }
 
 .menu-navigation {
@@ -229,6 +236,7 @@ body {
     justify-content: space-between;
     margin: 0;
     margin-top: 30px;
+    position: relative;
 }
 
 .catalog-icon {
@@ -239,6 +247,7 @@ body {
     border-radius: 50%;
     border: 2px solid #000000;
     box-sizing: border-box;
+    cursor: pointer;
 }
 
 .catalog-link {
@@ -290,6 +299,7 @@ body {
     height: 60px;
     position: absolute;
     top: 61px;
+    cursor: pointer;
 }
 
 .slider-button-left {
@@ -323,7 +333,7 @@ body {
     font-size: 18px;
     line-height: 30px;
     color: #444444;
-    margin-bottom: 37px;
+    margin-bottom: 47px;
     width: 560px;
 }
 
@@ -347,13 +357,36 @@ body {
     align-items: baseline;
     justify-content: space-between;
     list-style-type: none;
+    
+}
+
+.description-button-list {
+    width: 76px;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 15px;
+}
+
+.description-btn-item {
+    width: 12px;
+    height: 12px;
+    background: #FFFFFF;
+    border: 2px solid #000000;
+    box-sizing: border-box;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.description-active {
+    background: #000000;
 }
 
 .specific {
     list-style-type: none;
     padding-left: 0px;
     display: flex;
-    margin-top: 38px;
+    margin-top: 45px;
 }
 
 .specific-item {
@@ -404,18 +437,19 @@ body {
 
 .services {
     display: flex;
-    margin-top: 172px;
+    margin-top: 183px;
     padding-left: 140px;
     padding-right: 140px;
 }
 
 .services-list {
-    height: 319px;
+    height: 309px;
     margin: 0;
+    margin-top: -19px;
     list-style-type: none;
     position: relative;
     padding: 0px;
-
+    padding-right: 127px;
 }
 
 .services-list::after {
@@ -425,7 +459,8 @@ body {
     width: 7px;
     height: 319px;
     position: absolute;
-    top: -102px;
+    top: -82px;
+    right: 0px;
 }
 
 
@@ -437,11 +472,26 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
 .services-text {
-    /*width: 448px;*/
-    display: grid;
+    width: 694px;
+    margin-left: 117px;
+    margin-top: -70px;
+    position: relative;
+}
+
+.services-paragraph {
+    display: block;
+    width: 455px;
+    height: 90px;
+}
+
+.services-img {
+    position: absolute;
+    top: 45px;
+    right: 0;
 }
 
 .delivery-rare {
@@ -470,6 +520,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    display: block;
+    width: 560px;
+    padding-top: 5px;
 }
 
 .delivery-info {
@@ -511,7 +564,7 @@ body {
 }
 
 .contacts {
-    width: 520px;
+    width: 522px;
 }
 
 .contacts::before {
@@ -522,23 +575,29 @@ body {
     background: #000000;
 }
 
+.about-title {
+    margin-bottom: 50px;
+}
+
 .appointment {
     background: #F0F0F0;
     width: 1160px;
     margin: 0 auto;
-    margin-top: 80px;
+    margin-top: 83px;
     padding-left: 140px;
     padding-right: 140px;
+    padding-bottom: 60px;
 }
 
 .appointment-text-container {
     display: flex;
     align-items: center;
+    padding-top: 22px;
 }
 
 .appointment-form {
     width: 1160px;
-    margin-top: 144px;
+    margin-top: 100px;
 }
 
 .appointment-title {
@@ -549,6 +608,7 @@ body {
 
 .appointment-text {
     width: 525px;
+    padding-top: 10px;
 }
 
 .appointment-email {
@@ -556,8 +616,9 @@ body {
     border: none;
     border-bottom: 3px solid #C4C4C4;
     background: #F0F0F0;
-    width: 557px;
-    padding-bottom: 16px;
+    width: 539px;
+    padding-bottom: 12px;
+    padding-left: 18px;
 }
 
 .appointment-email::placeholder {
@@ -581,9 +642,12 @@ body {
     text-transform: uppercase;
     border: 3px solid #CECECE;
     width: 257px;
-    padding-top: 16px;
+    height: 57px;
+    padding-top: 19px;
     padding-bottom: 16px;
     letter-spacing: 0.2em;
+    margin-left: -6px;
+    cursor: pointer;
 }
 
 .appointment-form-text {
@@ -592,6 +656,16 @@ body {
     font-size: 18px;
     line-height: 30px;
     color: #444444;
+    margin-left: 180px;
+}
+
+.appointment-form-text::before {
+    content: "";
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background: url(../images/check-mark.svg);
+    margin-right: 18px;
 }
 
 .text-exit {
@@ -602,8 +676,23 @@ body {
 }
 
 .catalog-list {
+    padding-left: 0;
+    position: absolute;
+    list-style-type: none;
     font-size: 16px;
     line-height: 18px;
+    width: 478px;
+    height: 180px;
+    /*display: block;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    top: 32px;
+    z-index: 1;*/
+}
+
+.catalog-list-item {
+    width: 225px;
 }
 
 .slider-number {
@@ -666,8 +755,8 @@ body {
 .services-item {
     height: 8px;
     background: #FFE17F;
-    margin-bottom: 55px;
-    width: 160px;
+    margin-bottom: 67px;
+
 }
 
 .specific-item:nth-child(1) {
@@ -690,6 +779,7 @@ body {
     font-family: "Raleway";
     font-size: 50px;
     line-height: 50px;
+    margin-bottom: 33px;
 }
 
 .services-paragraph,
@@ -698,19 +788,42 @@ body {
 .contacts-phone,
 .contacts-schedule-item,
 .appointment-text {
+    font-style: normal;
     font-size: 18px;
     line-height: 30px;
     color: #444444;
 }
 
 .about-text {
+    font-family: "Rubik", serif;
+    font-style: normal;
+    font-weight: normal;
     font-size: 18px;
     line-height: 30px;
     color: #444444;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 20px;
+    margin-bottom: 27px;
+}
+
+.cargo-list {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 40px;
+}
+
+.cargo-item {
+    margin-bottom: 9px;
+    margin-left: 2px;
+    
+}
+
+.cargo-item::before {
+    content: "";
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background: #FFC700;
+    border-radius: 50%;
+
 }
 
 .cargo-text {
@@ -718,6 +831,40 @@ body {
     font-size: 18px;
     line-height: 20px;
     letter-spacing: -0.02em;
+    padding-left: 20px;
+}
+
+.contacts-title {
+    margin-bottom: 50px;
+}
+
+.contacts-info {
+    margin-bottom: 28px;
+}
+
+.contacts-subtitle {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    color: #444444;
+    margin-bottom: 0px;
+}
+
+.contacts-address {
+    margin-bottom: 30px;
+}
+
+.contacts-address-text {
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+
+.contacts-schedule {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 16px;
+    margin-bottom: 46px;
 }
 
 .button-about-write {
@@ -740,6 +887,24 @@ body {
     width: 259px;
 }
 
+.active-btn {
+    color: #FFE17F;
+    background: #000000;
+    position: relative;
+    z-index: 1;
+}
+
+.active-btn::after {
+    content: "";
+    display: block;
+    background: #000000;
+    height: 40px;
+    z-index: -1;
+    position: absolute;
+    width: 280px;
+    left: 0px;
+}
+
 /* Footer */
 
 .page-footer {
@@ -748,6 +913,7 @@ body {
     padding-left: 140px;
     padding-right: 140px;
     padding-top: 61px;
+    padding-bottom: 40px;
 }
 
 .footer-logo {
@@ -898,10 +1064,13 @@ body {
 }
 
 .catalog-products {
+    width: 220px;
     margin-left: 200px;
+    padding-top: 12px;
 }
 
 .goods {
+    width: 840px;
     margin-right: 140px;
     background: #FFFFFF;
 }
@@ -911,15 +1080,14 @@ body {
     align-items: center;
     height: 70px;
     width: 840px;
-    padding-left: 40px;
     background: #F0F0F0;
 }
 
 .catalog-title-sort {
     margin-left: 40px;
     margin-right: 193px;
-
 }
+
 
 .select-control-popular {
     width: 160px;
@@ -948,15 +1116,33 @@ body {
     text-transform: uppercase;
 }
 
+.catalog-title-filter {
+    margin-bottom: 58px;
+}
+
 .catalog-filter-title {
     font-weight: bold;
     font-size: 18px;
     line-height: 20px;
     letter-spacing: -0.02em;
+    padding-left: 0;
 }
 
 .catalog-filter-group {
     border: none;
+    position: relative;
+    padding: 0;
+    display: flex;
+}
+
+.catalog-filter-group::before {
+    content: "";
+    display: block;
+    background-color: #000000;
+    height: 2px;
+    width: 200px;
+    position: absolute;
+    top: -26px;
 }
 
 .circle {
@@ -1029,15 +1215,15 @@ body {
     width: 840px;
     padding: 0;
     background: #FFFFFF;
-    padding-left: 40px;
     display: flex;
     flex-wrap: wrap;
-    padding-top: 54px;
+    padding-top: 53px;
+    margin-bottom: 3px;
 }
 
 .product-card {
     margin-left: 40px;
-    margin-bottom: 30px;
+    margin-bottom: 27px;
 }
 
 .product-card-text {
@@ -1079,9 +1265,12 @@ body {
     text-transform: uppercase;
     width: 760px;
     height: 55px;
-    display: block;
-    margin-left: 80px;
-
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    margin-bottom: 44px;
 }
 
 
@@ -1089,7 +1278,11 @@ body {
     background: #EBEBEB;
     display: flex;
     justify-content: space-between;
-    padding-left: 80px;
+    width: 760px;
+    height: 71px;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 78px;
 }
 
 .pagination-list {
@@ -1097,6 +1290,18 @@ body {
     padding: 0;
     list-style-type: none;
     display: flex;
+    width: 200px;
+    height: 40px;
+    justify-content: space-around;
+}
+
+
+.pagination-back {
+    margin-left: 26px;
+}
+
+.pagination-next {
+    margin-right: 21px;
 }
 
 .pagination-link {
