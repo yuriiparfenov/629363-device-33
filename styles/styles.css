@@ -2236,7 +2236,7 @@ body {
 
 .more-information:hover::before {
   height: 40px;
-  top: -14px;
+  top: -17px;
 }
 
 .more-information:active::after {
