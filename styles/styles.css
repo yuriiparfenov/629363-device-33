@@ -953,7 +953,7 @@ body {
   justify-content: space-between;
   width: 1140px;
   margin: 0 auto;
-  margin-top: 68px;
+  margin-top: 70px;
 }
 
 .about {
@@ -982,12 +982,12 @@ body {
 }
 
 .about-title {
-  margin-bottom: 50px;
+  margin-bottom: 48px;
 }
 
 .appointment {
   background: #f0f0f0;
-  margin-top: 73px;
+  margin-top: 75px;
 }
 
 .appointment-container {
@@ -1006,7 +1006,7 @@ body {
 
 .appointment-form {
   width: 1160px;
-  margin-top: 100px;
+  margin-top: 98px;
   display: flex;
   align-items: baseline;
 }
@@ -1076,7 +1076,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   border: 3px solid #cecece;
-  width: 257px;
+  width: 253px;
   height: 57px;
   padding-top: 15px;
   padding-bottom: 16px;
@@ -1109,7 +1109,7 @@ body {
   font-size: 18px;
   line-height: 30px;
   color: #444444;
-  margin-left: 184px;
+  margin-left: 187px;
 }
 
 .appointment-form-text::before {
@@ -1289,7 +1289,7 @@ body {
 }
 
 .about-text-parthone {
-  letter-spacing: -0.03em;
+  letter-spacing: -0.01em;
 }
 
 .about-text-parthtwo {
@@ -1325,7 +1325,7 @@ body {
 }
 
 .contacts-title {
-  margin-bottom: 50px;
+  margin-bottom: 48px;
 }
 
 .contacts-info {
