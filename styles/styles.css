@@ -430,7 +430,7 @@ body {
 .goods-button {
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 19px;
   line-height: 30px;
   color: #000000;
   border: none;
@@ -664,12 +664,13 @@ body {
 }
 
 .slider-title {
+  font-family: "Raleway", serif;
   font-weight: 800;
-  font-size: 48px;
+  font-size: 50px;
   line-height: 50px;
   position: relative;
   z-index: 9999;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
 }
 
 .slider-text {
@@ -831,7 +832,7 @@ body {
 .services-list {
   min-height: 309px;
   margin: 0;
-  margin-top: -20px;
+  margin-top: -22px;
   list-style-type: none;
   position: relative;
   padding: 0px;
@@ -845,7 +846,7 @@ body {
   width: 7px;
   height: 319px;
   position: absolute;
-  top: -82px;
+  top: -80px;
   right: 0px;
 }
 
@@ -905,7 +906,7 @@ body {
 .delivery-rare {
   width: 1160px;
   margin: 0 auto;
-  margin-top: 70px;
+  margin-top: 72px;
 }
 
 .delivery-icon {
@@ -994,7 +995,7 @@ body {
   margin: 0 auto;
   padding-left: 140px;
   padding-right: 140px;
-  padding-bottom: 55px;
+  padding-bottom: 56px;
 }
 
 .appointment-text-container {
@@ -1019,6 +1020,18 @@ body {
 .appointment-text {
   width: 525px;
   padding-top: 10px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.appointment-text-parth {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: -0.02em;
 }
 
 .appointment-email {
@@ -1027,8 +1040,8 @@ body {
   border-bottom: 3px solid #c4c4c4;
   background: #f0f0f0;
   width: 544px;
-  padding-bottom: 12px;
-  padding-top: 25px;
+  padding-bottom: 16px;
+  padding-top: 27px;
   padding-left: 18px;
 }
 
@@ -1065,7 +1078,7 @@ body {
   border: 3px solid #cecece;
   width: 257px;
   height: 57px;
-  padding-top: 19px;
+  padding-top: 15px;
   padding-bottom: 16px;
   letter-spacing: 0.2em;
   margin-left: -6px;
@@ -1195,7 +1208,7 @@ body {
 }
 
 .services-item {
-  margin-bottom: 66px;
+  margin-bottom: 68px;
   position: relative;
   z-index: 9999;
 }
@@ -1236,6 +1249,8 @@ body {
 
 .services-btn {
   font-family: "Raleway", serif;
+  font-style: normal;
+  font-weight: 800;
   font-size: 18px;
   line-height: 21px;
   text-align: center;
@@ -1257,8 +1272,7 @@ body {
 .contacts-info,
 .contacts-address-text,
 .contacts-phone,
-.contacts-schedule-item,
-.appointment-text {
+.contacts-schedule-item {
   font-style: normal;
   font-size: 18px;
   line-height: 30px;
@@ -1267,11 +1281,19 @@ body {
 
 .about-text {
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 18px;
   line-height: 30px;
   color: #444444;
   margin-bottom: 27px;
+}
+
+.about-text-parthone {
+  letter-spacing: -0.03em;
+}
+
+.about-text-parthtwo {
+  letter-spacing: 0.01em;
 }
 
 .cargo-list {
@@ -1295,10 +1317,10 @@ body {
 }
 
 .cargo-text {
-  font-weight: bold;
+  font-style: normal;
+  font-weight: 700;
   font-size: 18px;
   line-height: 20px;
-  letter-spacing: -0.02em;
   padding-left: 20px;
 }
 
@@ -1308,15 +1330,23 @@ body {
 
 .contacts-info {
   margin-bottom: 28px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
 }
 
 .contacts-subtitle {
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 24px;
   line-height: 30px;
   color: #444444;
   margin-bottom: 0px;
+}
+
+.subtitle-logo {
+  letter-spacing: 0.02em;
 }
 
 .contacts-address {
@@ -1477,9 +1507,9 @@ body {
 
 .footer-container {
   margin: 0 auto;
-  padding-left: 140px;
+  padding-left: 145px;
   padding-right: 140px;
-  padding-top: 61px;
+  padding-top: 62px;
   padding-bottom: 40px;
 }
 
@@ -1578,7 +1608,7 @@ body {
   list-style-type: none;
   justify-content: center;
   padding: 0;
-  padding-left: 30px;
+  padding-left: 26px;
 }
 
 .social-item {
@@ -1826,7 +1856,7 @@ body {
   height: 2px;
   width: 200px;
   position: absolute;
-  top: -35px;
+  top: -32px;
 }
 
 .circle {
@@ -1951,7 +1981,7 @@ body {
   list-style-type: none;
   padding: 0;
   margin: 0;
-  margin-top: 14px;
+  margin-top: 18px;
 }
 
 .catalog-filter-item {
@@ -1976,10 +2006,9 @@ body {
 }
 
 .control-input {
-  width: 20px;
-  height: 20px;
-  border: 2px solid #cccccc;
-  border-radius: 3px;
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
 }
 
 .control-input[type="checkbox"]:checked + .control-mark::after {
@@ -2004,7 +2033,8 @@ body {
   opacity: 0.1;
 }
 
-.control-checkbox:focus .control-mark::before {
+.control-input:focus-within + .control-mark::before {
+  display: inline-block;
   content: "";
   position: absolute;
   width: 24px;
@@ -2013,6 +2043,13 @@ body {
   top: -6px;
   left: -6px;
 }
+
+.control-input-radio {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
 
 .control-input[type="checkbox"]:checked + .control-mark {
   border-color: #000000;
@@ -2027,6 +2064,7 @@ body {
   width: 8px;
   height: 8px;
   background: #000000;
+  border: 0px;
   content: "";
   border-radius: 50%;
   top: 4px;
@@ -2037,7 +2075,7 @@ body {
   border-color: #000000;
 }
 
-.control-radio:focus .control-mark::after {
+.control-input-radio:focus + .control-mark::after {
   content: "";
   position: absolute;
   width: 24px;
@@ -2047,13 +2085,9 @@ body {
   left: -6px;
 }
 
-.control-text {
-  font-size: 18px;
-  line-height: 30px;
-}
-
 .radio-group {
   margin-bottom: 42px;
+  margin-top: -7px;
 }
 
 .product-list {
@@ -2080,11 +2114,11 @@ body {
 }
 
 .product-card-title {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 18px;
   line-height: 20px;
-  letter-spacing: -0.02em;
-  width: 195px;
+  letter-spacing: -0.01em;
+  width: 205px;
   margin-top: 22px;
 }
 
